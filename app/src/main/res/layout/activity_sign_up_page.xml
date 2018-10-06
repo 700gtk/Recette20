@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="17dp"
+    tools:context=".SignUpPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:gravity="center"
+            android:paddingBottom="60dp"
+            android:text="Welcome to Recette"
+            android:textSize="32sp"
+            app:fontFamily="cursive"
+
+            />
+
+        <EditText
+            android:id="@+id/EmailString"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <!--<EditText-->
+            <!--android:id="@+id/EmailString"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="Email"-->
+            <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+        <EditText
+            android:id="@+id/PswdString"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Clever Password"
+            android:inputType="textPassword" />
+
+        <!--<EditText-->
+            <!--android:id="@+id/PswdString"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="Clever Password" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="101dp" />
+        <Button
+            android:onClick="createAccountButton"
+            android:id="@+id/CreateAcct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            />
+
+        <Button
+
+            android:id="@+id/FacebookLogin"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Facebook Login" />
+
+        <Button
+            android:onClick="SignIn"
+            android:id="@+id/SignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN IN"
+
+            />
+
+
+
+        />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
